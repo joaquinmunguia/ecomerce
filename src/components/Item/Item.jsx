@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React , {useState} from "react";
 import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 
 
-
-export const Item = ({id, name, img, cantidad, price}) => {
+export const Item = ({id, name, img, cantidad, price, category}) => {
    
  const [counter, setCounter] = useState(1);
 
@@ -36,7 +36,8 @@ export const Item = ({id, name, img, cantidad, price}) => {
             <h3 className="card-title">{name}</h3>
             <p className="card-text">Precio: ${price}</p>
             <p className="card-text">stock: {cantidad}</p>
-           
+            <p className="card-text">{category}</p>
+            <Link to={`/detail/${id}`} className="btn btn-primary">Ver más</Link>      
             <h1>{counter}</h1>
      
       <Button variant="primary" onClick={onRemove}>
@@ -49,6 +50,7 @@ export const Item = ({id, name, img, cantidad, price}) => {
       <Button variant="secondary" size="lg" onClick={respuesta}>
         Agregar al carrito
       </Button>
+     
      
         </div>
     </article>
