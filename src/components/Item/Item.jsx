@@ -50,20 +50,22 @@ export const Item = ({id, name, img, cantidad, price, category}) => {
             <Link to={`/detail/${id}`} className="btn btn-primary">Ver más</Link>      
             <h1>{counter}</h1>
      
-      <Button variant="primary" onClick={onRemove}>
+      <Button className="btn btn-primary" onClick={onRemove}>
         -
       </Button>
       
-      <Button  variant="primary" onClick={incrementar}>
+      <Button  className="btn btn-primary" onClick={incrementar}>
         +
       </Button>
-      <Button variant="secondary" size="lg" onClick={respuesta}>
+      <br/>
+      <Button className="btn btn-success my-2" onClick={respuesta}>
         Agregar al carrito
       </Button>
-      <div>
+      <br/>
+      
         <Button className="btn btn-primary" onClick={handleVolver}>Volver</Button>
         <Button className="btn btn-primary" onClick={handleVolverInicio}>Volver al inicio</Button>
-     </div>
+    
       
         </div>
 

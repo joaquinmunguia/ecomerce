@@ -1,3 +1,4 @@
+
 export const stock = [
     {
         id: 1,
@@ -5,7 +6,7 @@ export const stock = [
         name: "Producto 1",
         desc: "Probando",
         cantidad: 4,
-        img: "https://via.placeholder.com/220",
+        img: "",
         category: 'zapatillas'
     },
     {
