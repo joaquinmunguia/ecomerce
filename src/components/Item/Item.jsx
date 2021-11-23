@@ -1,10 +1,20 @@
 import React , {useState} from "react";
 import { Button } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router';
 
 
 export const Item = ({id, name, img, cantidad, price, category}) => {
+
+  const navigate = useNavigate()
+
+  const handleVolver = () => {
+      navigate(-1)
+  }
+
+  const handleVolverInicio = () => {
+      navigate('/')
+  }
    
  const [counter, setCounter] = useState(1);
 
@@ -50,9 +60,13 @@ export const Item = ({id, name, img, cantidad, price, category}) => {
       <Button variant="secondary" size="lg" onClick={respuesta}>
         Agregar al carrito
       </Button>
-     
-     
+      <div>
+        <Button className="btn btn-primary" onClick={handleVolver}>Volver</Button>
+        <Button className="btn btn-primary" onClick={handleVolverInicio}>Volver al inicio</Button>
+     </div>
+      
         </div>
+
     </article>
     
     )

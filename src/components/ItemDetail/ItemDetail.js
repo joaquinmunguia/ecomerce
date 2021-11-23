@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
+import { Button } from "react-bootstrap";
 
 export const ItemDetail = ({id, name, img, desc, price, category}) => {
 
@@ -23,8 +24,8 @@ export const ItemDetail = ({id, name, img, desc, price, category}) => {
 
            
 
-            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
+            <Button className="btn btn-primary" onClick={handleVolver}>Volver</Button>
+            <Button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</Button>
         </div>
     )
 }
