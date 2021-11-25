@@ -1,30 +1,33 @@
+import zapatilla from '../data/fotos/Zapatillas_Galaxy_5_Negro.jpg';
+import buzo from '../data/fotos/buzo.jpg';
+import remera from '../data/fotos/remera.jpg';
 
 export const stock = [
     {
         id: 1,
-        price: 1500,
-        name: "Producto 1",
-        desc: "Probando",
+        price: 15000,
+        name: "Zapatilla Galaxy 5 Negra",
+        desc: "Zapatilla en todos los talles del 38 al 45",
         cantidad: 4,
-        img: "",
+        img:  zapatilla,
         category: 'zapatillas'
     },
     {
         id: 2,
-        price: 2500,
-        name: "Producto 2",
-        desc: "Probando2",
+        price: 3000,
+        name: "Buzos Adidas",
+        desc: "Tenemos el buzo en los talles del S a XL",
         cantidad: 6,
-        img: "https://via.placeholder.com/220",
+        img: buzo,
         category: 'buzos'
     },
     {
-        id: 2,
-        price: 4000,
-        name: "Producto 3",
-        desc: "Probando3",
+        id: 3,
+        price: 1500,
+        name: "Remera Adidas ",
+        desc: " Tenemos en todos los talles del S a XL",
         cantidad: 2,
-        img: "https://via.placeholder.com/220",
+        img: remera,
         category: 'remeras'
     }
 
