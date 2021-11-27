@@ -13,8 +13,7 @@ export const CartItem = ({name, price, cantidad, id}) => {
             <p>Cantidad: {cantidad}</p>
             <button 
                 className="btn btn-danger"
-                onClick={() => { removerDelCarrito(id) }}
-            >
+                onClick={() => { removerDelCarrito(id) }}>
                 <BsFillTrashFill/>
             </button>
         </div>
