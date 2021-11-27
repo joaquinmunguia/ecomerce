@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router'
-import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+import { ItemCount } from '../ItemCount/ItemCount'
 
-export const ItemDetail = ({id, name, img, desc, price, category}) => {
+export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
+
+    const {agregarAlCarrito, isInCart} = useContext(CartContext)
+    
 
     const navigate = useNavigate()
-
+    
+    const [cantidad, setCantidad] = useState(0)
+    
     const handleVolver = () => {
         navigate(-1)
     }
@@ -14,18 +21,80 @@ export const ItemDetail = ({id, name, img, desc, price, category}) => {
         navigate('/')
     }
 
+    const handleAgregar = () => {
+        if (cantidad > 0) {
+            agregarAlCarrito({
+                id,
+                name,
+                price,
+                img,
+                cantidad
+            })
+        }   
+    }
+
     return (
         <div>
             <h2>{name}</h2>
             <img src={img} alt={name}/>
             <p>{desc}</p>
             <p>Precio: ${price}</p>
-            <p>categoria : {category}</p>
 
-           
+            {
+                !isInCart(id)
+                    ?   <ItemCount 
+                            max={stock} 
+                            cantidad={cantidad} 
+                            setCantidad={setCantidad}
+                            onAdd={handleAgregar}
+                        />
+                    :   <Link to="/cart" className="btn btn-success d-block">Terminar mi compra</Link>
+            }
 
-            <Button className="btn btn-primary" onClick={handleVolver}>Volver</Button>
-            <Button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</Button>
+            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
+            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import { useNavigate } from 'react-router'
+// import { Button } from "react-bootstrap";
+
+// export const ItemDetail = ({id, name, img, desc, price, category}) => {
+
+//     const navigate = useNavigate()
+
+//     const handleVolver = () => {
+//         navigate(-1)
+//     }
+
+//     const handleVolverInicio = () => {
+//         navigate('/')
+//     }
+
+//     return (
+//         <div>
+//             <h2>{name}</h2>
+//             <img src={img} alt={name}/>
+//             <p>{desc}</p>
+//             <p>Precio: ${price}</p>
+//             <p>categoria : {category}</p>
+
+           
+
+//             <Button className="btn btn-primary" onClick={handleVolver}>Volver</Button>
+//             <Button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</Button>
+//         </div>
+//     )
+// }

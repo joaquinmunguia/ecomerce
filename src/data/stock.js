@@ -8,7 +8,7 @@ export const stock = [
         price: 15000,
         name: "Zapatilla Galaxy 5 Negra",
         desc: "Zapatilla en todos los talles del 38 al 45",
-        cantidad: 4,
+        stock: 4,
         img:  zapatilla,
         category: 'zapatillas'
     },
@@ -17,7 +17,7 @@ export const stock = [
         price: 3000,
         name: "Buzos Adidas",
         desc: "Tenemos el buzo en los talles del S a XL",
-        cantidad: 6,
+        stock: 6,
         img: buzo,
         category: 'buzos'
     },
@@ -26,7 +26,7 @@ export const stock = [
         price: 1500,
         name: "Remera Adidas ",
         desc: " Tenemos en todos los talles del S a XL",
-        cantidad: 2,
+        stock: 2,
         img: remera,
         category: 'remeras'
     }

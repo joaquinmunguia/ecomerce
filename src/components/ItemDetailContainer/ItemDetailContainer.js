@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
-import { pedirDatos } from '../../helpers/PedirDatos'
-import { ItemDetail } from '../ItemDetail/ItemDetail'
-
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import { pedirDatos } from '../../helpers/PedirDatos';
+import { ItemDetail } from '../ItemDetail/ItemDetail';
 
 export const ItemDetailContainer = () => {
 
- 
+
 
     const [item, setItem] = useState()
     const [loading, setLoading] = useState(false)
