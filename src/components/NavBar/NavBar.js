@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom'
 import { CartWidget } from '../CartWidget/CartWidget'
 import './NavBar.scss'
 
-export const NavBar = () => {
 
+export const NavBar = () => {
+  
     
     return (
     
     <header className="header">
-        <Link to="/"><h1>Logo</h1></Link>
+        <Link to="/"><h1>RopaLandia</h1></Link>
 
         <nav>
             <ul>
