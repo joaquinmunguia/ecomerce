@@ -24,8 +24,8 @@ export const stock = [
     {
         id: 3,
         price: 1500,
-        name: "Remera Adidas ",
-        desc: " Tenemos en todos los talles del S a XL",
+        name: "Remera Adidas",
+        desc: "Tenemos en todos los talles del S a XL",
         stock: 2,
         img: remera,
         category: 'remeras'

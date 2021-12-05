@@ -18,8 +18,9 @@ export const NavBar = () => {
                 <li><Link to="productos/buzos"> Buzos</Link></li>
             </ul>
         </nav>
-
-       <Link to="cart"><CartWidget/></Link>
+        
+        <CartWidget/>
+        
     </header>
     )
 }
