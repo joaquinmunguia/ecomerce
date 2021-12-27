@@ -3,7 +3,7 @@ import React from 'react'
 import { Container, Row} from 'react-bootstrap'
 import { Item } from '../Item/Item'
 import './ItemList.scss';
-import { Loader } from '../Loader/Loader';
+
 
 export const ItemList = ({items}) => {
 
