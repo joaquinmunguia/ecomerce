@@ -10,6 +10,7 @@ export const Loader = () => {
                 animation="border" 
                 size="lg" 
                 variant="primary"
+                
             />
         </div>
     )

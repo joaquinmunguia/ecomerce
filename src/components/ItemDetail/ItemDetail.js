@@ -55,8 +55,3 @@ export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
         </div>
     )
 }
-
-
-
-
-

@@ -10,7 +10,7 @@ export const CartView = () => {
     if (carrito.length === 0) {
         return (
             <div className="container my-5">
-                <h2>No te quedes sin comprar </h2>
+                <h2 className='h2'>No te quedes sin comprar </h2>
                 <hr/>
                 <Link to="/" className="btn btn-primary">Volver</Link>
             </div>

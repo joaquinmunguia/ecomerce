@@ -2,6 +2,7 @@ import zapatilla from '../data/fotos/Zapatillas_Galaxy_5_Negro.jpg';
 import buzo from '../data/fotos/buzo.jpg';
 import remera from '../data/fotos/remera.jpg';
 
+
 export const stock = [
     {
         id: 1,

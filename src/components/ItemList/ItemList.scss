@@ -1,0 +1,16 @@
+.h2 {
+    animation-duration: 6s;
+    animation-name: aparecer;
+    text-align: center;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 4;
+    } 
+
+}
