@@ -11,3 +11,7 @@
 -Utilizando tambien firebase, https://console.firebase.google.com/project/ropalandia-53886/overview
 
 -Tambien se utilizo librerias de react-boostraps, formularios yup, 
+
+-Para ver el sitio web esta subido a https://vigilant-poitras-081072.netlify.app
+
+-Desde ya Muchas gracias, Saludos
